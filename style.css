@@ -76,7 +76,7 @@ img {
 @media screen and (max-width: 420px) {
 
   body {
-    font-size: 1.5em;
+    font-size: 2.2em;
     padding: 0;
     margin: 0;
   }
@@ -111,3 +111,34 @@ img {
 
 }
 /* --Smartphone view */
+
+/* Tablet view */
+@media screen and (max-width: 1024px) and (min-width: 421px) {
+
+  #why {
+    padding: 3%;
+  }
+  
+  #why::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    width: 33%;
+    float: left;
+  }
+  #why img {
+    width: 150px;
+    height: 150px;
+  }
+
+  hr {
+    display: none;
+  }
+
+}
+/* --Tablet view */
